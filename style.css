@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    padding: 10px 15px;
+    background-image: url('images/review-bg-2.jpg');
+}
+
+main {
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: 10px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu-items {
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    margin: 0px 8px;
+
+}
+
+.menu-items:hover {
+    text-decoration: underline;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 8px;
+}
+
+section {
+    text-align: center;
+}
+
+#search-box {
+    width: 100%;
+    color: #222;
+    border: 1px solid #dfe1e5;
+    font-size: 13px;
+    padding: 14px;
+    border-radius: 24px;
+    margin-bottom: 24px;
+}
+
+#search-box:hover,
+#search-box:focus {
+    outline: none;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.input-wrapper {
+    position: relative;
+    width: 582px;
+    display: inline-block;
+}
+
+#mic {
+    position: absolute;
+    right: 3px;
+    width: 30px;
+    top: 8px;
+}
+
+button {
+    background-color: #f2f2f2;
+    color: #5F6368;
+    font-size: 14px;
+    height: 36px;
+    padding: 0 16px;
+    background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+    border: 1px solid transparent;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+    color: #222;
+
+}
+
+button:hover {
+    background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #222
+}
+
+#dropdown-menu {
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+
+/* #dropdown-menu:hover + .drop-down,#dropdown-menu:focus + .drop-down { 
+     visibility: visible;  
+     background-color: white;
+     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}  */
+
+#apps{
+    display: none;
+}
+input:checked + .drop-down{
+    visibility: visible;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.drop-down{
+    cursor: pointer;
+    visibility: visible;
+}
+
+.drop-down {
+    position: absolute;
+    top: 60px;
+    /* display: none; */
+    visibility: hidden;
+}
+.row-1 {
+    display: flex;
+    margin-bottom: 15px;
+}
+.row-1 div p {
+    font-size: 14px;
+    text-align: center;
+}
+.row-1 div {
+    padding: 10px;
+}
+
+@media screen and (max-width:650px) {
+    .input-wrapper {
+        width: 300px;
+    }
+    main {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 100px 0px;
+
+    }
+    .logo {
+        width: 200px;
+        margin: 25px 0px;
+    }
+}
